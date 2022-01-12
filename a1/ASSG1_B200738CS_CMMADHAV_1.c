@@ -163,6 +163,7 @@ int main(){
         }
         if(ch == 'p'){
             Print(tree->head);
+            printf("\n");
         }
         if(ch == 'e'){
             break;
