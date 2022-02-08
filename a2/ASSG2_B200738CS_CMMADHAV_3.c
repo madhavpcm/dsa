@@ -80,6 +80,7 @@ Node* Insert(Node** n,char*fname ,char* lname, const int age){
     return *n;
 
 }
+//4,5
 void Delete(Node** n,Node* z){
     Node* y = NULL;
     Node* x = NULL;
@@ -173,7 +174,7 @@ void QPrint(Node* n, char* fname, int age){
     else if(n->age < age){
         QPrint(n->right, fname, age);
     }
-
+    return;
 }
 void PurgeTree(Node*root){
     if(root == NULL)

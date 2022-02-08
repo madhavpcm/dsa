@@ -52,6 +52,7 @@ void setLargestPrime()
         n--;
     LARGEST_PRIME = n;
 }
+//2,3
 void insertToHashTable(int *HT, const int k)
 {
     for (int i = 0; i < M; i++)

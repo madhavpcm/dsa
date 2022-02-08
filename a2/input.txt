@@ -1,10 +1,9 @@
-i Ranbir Kapoor 30
-i Anil Kapoor 60
-i Kareena Kapoor 40
-i elon qwe3 50
-i Boney Kapoor 65
-i melon qwe3 56
-p Boney Kapoor
-p melon qwe3
-p Sonam Kapoor
-p Sachin Tendulkar
+10
+i Rupa
+i Nandu
+i Nita
+i Keshav
+p
+d Rupa
+p
+t

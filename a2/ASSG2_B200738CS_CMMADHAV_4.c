@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 char* hashFunc(char* name){
-    char* res = malloc(sizeof(char)*4);
+    char* res = calloc(5,sizeof(char));
     res[0] = name[0];
     if(strlen(name) < 3){
         int dig1 = name[0] + name[1]  ;
@@ -81,6 +81,7 @@ char* hashFunc(char* name){
 }
 
 int main(){
+    //freopen("input.txt", "r", stdin);
     char** HT = malloc(1000*sizeof(char*));
     for(int i=0; i < 1000; i++)
         HT[i] = NULL;
@@ -91,28 +92,33 @@ int main(){
             char name[30];
             scanf(" %s", name);
             char* roll= hashFunc(name);
-            int index =atoi(roll+1);
-            HT[index] = calloc(0,30*sizeof(char));
+            int index =atoi(roll+1)%1000;
+            HT[index] = calloc(30,sizeof(char));
             strcpy(HT[index], name);
             free(roll);
         }
         if(ch == 's'){
             char roll[4];
             scanf(" %s", roll);
-            if(HT[atoi(roll+1)] == NULL){
+            if(HT[atoi(roll+1)%1000] == NULL){
                 printf("NOT FOUND\n");
             }
             else{
-                printf("%s\n", HT[atoi(roll+1)]);
+                printf("%s\n", HT[atoi(roll+1)%1000]);
             }
         }
         if (ch == 'd'){
             char roll[4];
             scanf(" %s", roll);
-            if(HT[atoi(roll+1)] != NULL)
-                free(HT[atoi(roll+1)]);
+            if(HT[atoi(roll+1)%1000] != NULL)
+                free(HT[atoi(roll+1)%1000]);
             HT[atoi(roll+1)] = NULL;
         }
     }
+    for(int i=0; i< 1000; i++){
+        if(HT[i] !=NULL)
+            free(HT[i]);
+    }
+    free(HT);
     return 0;
 }
