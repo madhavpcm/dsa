@@ -1,0 +1,8 @@
+0:coin
+1:a-saved
+2:null
+3:null
+4:is-earned
+5:null
+6:null
+7:null

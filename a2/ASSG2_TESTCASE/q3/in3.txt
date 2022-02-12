@@ -1,0 +1,10 @@
+i ABC Idonpr 97
+i DeF pLbonq 80
+p DeF pLbonq
+i ghi Irnpod 99
+i JKL Idonpr 30
+i Mno pLbonq 89
+i pqr Irnpod 98
+p ghi Irnpod
+i sTu pLbonq 101
+t

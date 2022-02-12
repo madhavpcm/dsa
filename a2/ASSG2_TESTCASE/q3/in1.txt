@@ -1,0 +1,8 @@
+i tGy 1ABD 100
+p tGy 1ABD
+i tGZ 1ABD 98
+i tGa 1ACC 97
+i tG9 1ACC 96
+p tGy 1ABE
+i tF1 1ABD 95
+t
