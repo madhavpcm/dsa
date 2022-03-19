@@ -1,0 +1,10 @@
+*
+!/**/
+!*.*
+.vscode/
+*.pdf
+*.zip
+.cph/
+*.test
+*vgcore*
+myout*
