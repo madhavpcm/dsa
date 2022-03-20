@@ -64,6 +64,7 @@ Node* createNode(const int k){
     new->sibling = NULL;
     new->data =k;
     new->degree = 0;
+    new->parent = NULL;
     return new;
 }
 Heap* makeHeap(){
@@ -274,19 +275,18 @@ Heap* binomialHeapInsert(Heap* h, const int k){
     h = binomialHeapUnion(h, h_);
     return h;
 }
-void printLevel(Node* root){
-    qNode* queue=NULL;
+void printLevel(Node* root, qNode** queue){
     while(root != NULL){
         printf("%d ", root->data);
         if(root->child != NULL)
-            enQ(&queue,&root->child);
+            enQ(queue,&root->child);
         root = root->sibling;
     }
 
-    Node* ret = deQ(&queue);
+    Node* ret = deQ(queue);
     while(ret !=NULL){
-        printLevel(ret);
-        ret = deQ(&queue);
+        printLevel(ret, queue);
+        ret = deQ(queue);
     }
 }
 void binomialHeapPurge(Heap* h){
@@ -298,6 +298,7 @@ void binomialHeapPurge(Heap* h){
 int main(){
     char ch;
     Heap* heap = makeHeap();
+    qNode* queue = NULL;
     while(EOF != (ch = fgetc(stdin))){
         if(ch == 'i'){
             int x;
@@ -311,7 +312,7 @@ int main(){
             heap = binomialHeapDelete(heap, x);
         }
         if(ch == 'p'){
-            printLevel(heap->head) ;
+            printLevel(heap->head, &queue) ;
             printf("\n");
         }
         if(ch == 'm'){
