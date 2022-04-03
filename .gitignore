@@ -7,4 +7,6 @@
 .cph/
 *.test
 *vgcore*
+*.out
+*.jpeg
 myout*

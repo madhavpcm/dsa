@@ -1,0 +1,11 @@
+( T12 26 B ( T14 17 R ( T13 14 B ( T117 10 R ( T118 7 B ( T120 3 R ( NIL B ) ( NIL B ) ) ( NIL B ) ) ( T115 12 B ( NIL B ) ( NIL B ) ) ) ( T116 16 B ( T119 15 R ( NIL B ) ( NIL B ) ) ( NIL B ) ) ) ( T15 21 B ( T16 19 B ( NIL B ) ( T112 20 R ( NIL B ) ( NIL B ) ) ) ( T111 23 B ( NIL B ) ( NIL B ) ) ) ) ( T17 41 B ( T19 30 R ( T110 28 B ( NIL B ) ( NIL B ) ) ( T11 38 B ( T114 35 R ( NIL B ) ( NIL B ) ) ( T113 39 R ( NIL B ) ( NIL B ) ) ) ) ( T18 47 B ( NIL B ) ( NIL B ) ) ) ) 
+3
+( T25 16 B ( T22 2 R ( T21 1 B ( NIL B ) ( NIL B ) ) ( T23 8 B ( NIL B ) ( T27 10 R ( NIL B ) ( NIL B ) ) ) ) ( T210 20 R ( T26 18 B ( NIL B ) ( NIL B ) ) ( T24 22 B ( NIL B ) ( NIL B ) ) ) ) 
+2
+1
+T117
+T13
+( T25 16 B ( T22 2 B ( T21 1 B ( NIL B ) ( NIL B ) ) ( T27 10 R ( T23 8 B ( NIL B ) ( NIL B ) ) ( T28 12 B ( NIL B ) ( T29 14 R ( NIL B ) ( NIL B ) ) ) ) ) ( T210 20 B ( T26 18 B ( NIL B ) ( NIL B ) ) ( T24 22 B ( NIL B ) ( NIL B ) ) ) ) 
+3
+2
+T25
