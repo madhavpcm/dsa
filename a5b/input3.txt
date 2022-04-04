@@ -1,0 +1,24 @@
+7
+0
+1
+2
+3
+4
+5
+6
+0
+1
+2
+3
+4
+5
+6
+apsp 1 
+apsp 5 
+apsp 2 
+apsp 3 
+apsp 6 
+sssp 0 0
+sssp 1 5
+sssp 2 5
+sssp 3 6

@@ -88,6 +88,15 @@ int minKruskal(int graph[][1001], int V){
     }
     return res;
 }
+void print_matrix(int graph[][1001], int n){
+        printf("DEBUG:\n");
+    for(int i=0; i < n ;i++){
+        for(int j=0; j< n ; j++){
+            printf("%d ", graph[i][j]);
+        }
+        printf("\n");
+    }
+}
 
 int minPrims(int graph[][1001], int n){
     int res =0 ; 
@@ -97,7 +106,7 @@ int minPrims(int graph[][1001], int n){
     int e = 0;
     while(e < n - 1){
         int mn = INF;
-        int u = -1, v = -1;
+        int u = -1;int  v = -1;
         for(int i=0 ; i < n; i++){// O(n*n) = O (|v|*|v|)
             for(int ii=0; ii< n; ii++){
                 //printf("(%d %d : %d)", i, ii, graph[i][ii]);
@@ -110,7 +119,7 @@ int minPrims(int graph[][1001], int n){
                 }
             }
         }
-        if(u != -1 && v != 1){
+        if(u != -1 && v != -1){
             e++;
             res += mn;
             mst[u] = 1;
@@ -153,6 +162,10 @@ int main(){
         char dummy;
 
         scanf("%d%c",&index, &dummy);
+        if(dummy== '\n'){
+            memset(buffer, 0, 4500);
+            continue;
+        }
         fgets(buffer, sizeof(buffer), stdin);
         buffer[strcspn(buffer, "\n")] = 0;
 
